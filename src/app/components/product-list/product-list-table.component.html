@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<table class="table">
+<table class="table table-sm">
     <thead class="thead-dark">
         <tr>
             <th></th>
@@ -11,12 +11,12 @@
 
     <tbody>
         <tr *ngFor="let temp of products">
-            <td>
+            <td class="align-middle">
                 <img src="{{temp.imageUrl}}" height="50"/>
             </td>
-            <td>{{temp.name}}</td>
-            <td>{{temp.unitPrice | currency:'USD'}}</td>
-            <td>{{temp.unitsInStock}}</td>
+            <td class="align-middle">{{temp.name}}</td>
+            <td class="align-middle">{{temp.unitPrice | currency:'USD'}}</td>
+            <td class="align-middle">{{temp.unitsInStock}}</td>
         </tr>
     </tbody>
 </table>
